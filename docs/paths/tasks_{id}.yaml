@@ -13,12 +13,13 @@ get:
   responses:
     '200': 
       description: OK
+      content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/Task.yaml
     '400':
       $ref: ../components/responses/BadRequest.yaml
     '404':
       description: not found
       $ref: ../components/responses/NotFound.yaml
-    content:
-      application/json:
-        schema:
-          $ref: ../components/schemas/Task.yaml
+
