@@ -82,7 +82,6 @@ paths:
         '400':
           $ref: '#/components/responses/BadRequest'
         '404':
-          description: not found
           $ref: '#/components/responses/NotFound'
 
 components:
