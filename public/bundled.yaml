@@ -74,11 +74,11 @@ paths:
             example: 1
       responses:
         '200':
-        description: OK
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Task'
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
         '400':
           $ref: '#/components/responses/BadRequest'
         '404':
